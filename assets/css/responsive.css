@@ -1,0 +1,59 @@
+
+@media only screen and (max-width: 750px ) {
+    #sidebar{
+        transform: translateX(-100%);
+    }
+    #slide-btn{
+        content: "";
+        position: absolute;
+        width:0rem;
+        height:0rem;
+        border:15px solid transparent;
+        border-left:15px solid var(--primary-color);
+        transform-origin: 0 0;
+        /* top:50%; */
+        margin-top: 5rem;
+        left:100%;
+        transition: .7s all;
+
+    }
+    #slide-btn:hover{cursor: pointer;}
+    .main{
+        width: 100vw;
+        height: 100%;
+        left:0vw !important;
+    }
+    
+}
+
+@media only screen and (max-width: 500px ) {
+
+    #education .timeline{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 400px ) {
+
+    #education .timeline{
+        width: 100%;
+        padding:0 2rem;
+        grid-template-columns: 30% auto;
+    }
+    .project-card{
+        margin:2rem auto;
+    }
+    .content h2{
+        font-size: 5rem;
+    }
+    .content p{
+        color:#dfdfdf;
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+    .content p .tags{
+        color:var(--primary-color);
+        overflow-x: hidden !important;
+        font-weight: bold;
+        width: 0;
+    }
+}
